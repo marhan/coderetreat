@@ -15,8 +15,8 @@ public class TicTacToeTest {
 
 	@Test
 	public void testGrid() throws Exception {
-		Grid grid = new Grid(4);
-		assertEquals(4, grid.getSize());
+		Grid grid = new Grid(16);
+		assertEquals(16, grid.getSize());
 	}
 
 	@Test
@@ -46,6 +46,11 @@ public class TicTacToeTest {
 		ticTacToe.init();
 		assertEquals(2, ticTacToe.getPlayers().size());
 
+	}
+
+	@Test
+	public void testGridSize() throws Exception {
+		assertEquals(16, ticTacToe.getGrid().getSize());
 	}
 
 

@@ -67,6 +67,12 @@ public class TicTacToeTest {
 		ticTacToe.init();
 		Player playerOne = ticTacToe.getPlayerOne();
 		assertEquals("x", playerOne.move());
+	}
+
+	@Test
+	public void playerOneNotWinner() throws Exception {
+		ticTacToe.init();
+		Player playerOne = ticTacToe.getPlayerOne();
 		assertEquals(false, playerOne.won());
 	}
 

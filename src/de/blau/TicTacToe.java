@@ -37,4 +37,8 @@ public class TicTacToe {
 	public List<Player> getPlayers() {
 		return players;
 	}
+
+	public Player getPlayerOne() {
+		return players.get(0);
+	}
 }

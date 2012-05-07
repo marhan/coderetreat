@@ -4,6 +4,8 @@ public class Player {
 
 	private final int name;
 
+	private boolean won;
+
 	public Player(int i) {
 		name = i;
 	}
@@ -14,6 +16,10 @@ public class Player {
 
 	public String move() {
 		return "x";
+	}
+
+	public boolean won() {
+		return won;
 	}
 
 }

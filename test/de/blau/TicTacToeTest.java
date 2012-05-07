@@ -1,6 +1,6 @@
 package de.blau;
 
-import static org.junit.Assert.*;
+import static junit.framework.Assert.assertNotNull;
 
 import org.junit.Test;
 
@@ -8,7 +8,8 @@ public class TicTacToeTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		TicTacToe ticTacToe = new TicTacToe();
+		assertNotNull(ticTacToe);
 	}
 
 }

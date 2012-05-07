@@ -9,6 +9,8 @@ public class TicTacToe {
 
 	private int id = 0;
 
+	private List<Player> players;
+
 	public TicTacToe() {
 		this.grid = new Grid(4);
 	}
@@ -19,23 +21,20 @@ public class TicTacToe {
 	}
 
 	public void setGrid(Grid grid) {
-		// TODO Auto-generated method stub
 		this.grid = grid;
 	}
 
 	public Grid getGrid() {
-		// TODO Auto-generated method stub
 		return grid;
 	}
 
 	public void init() {
-
+		players = new ArrayList<Player>();
+		players.add(createPlayer());
+		players.add(createPlayer());
 	}
 
 	public List<Player> getPlayers() {
-		List<Player> list = new ArrayList<Player>();
-		list.add(createPlayer());
-		list.add(createPlayer());
-		return list;
+		return players;
 	}
 }

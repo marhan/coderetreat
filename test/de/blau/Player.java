@@ -12,4 +12,8 @@ public class Player {
 		return name;
 	}
 
+	public String move() {
+		return "x";
+	}
+
 }

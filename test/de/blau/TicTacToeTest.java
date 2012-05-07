@@ -58,4 +58,11 @@ public class TicTacToeTest {
 		ticTacToe.init();
 		assertEquals(1, ticTacToe.getPlayerOne().getId());
 	}
+
+	@Test
+	public void playerOneDoesAMove() throws Exception {
+		ticTacToe.init();
+		Player playerOne = ticTacToe.getPlayerOne();
+		assertEquals("x", playerOne.move());
+	}
 }

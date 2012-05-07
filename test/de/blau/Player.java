@@ -2,11 +2,14 @@ package de.blau;
 
 public class Player {
 
-	private final String name;
+	private final int name;
 
-	public Player(String string) {
-		// TODO Auto-generated constructor stub
-		name = string;
+	public Player(int i) {
+		name = i;
+	}
+
+	public Object getId() {
+		return name;
 	}
 
 }

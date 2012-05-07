@@ -23,7 +23,7 @@ public class TicTacToeTest {
 	public void createPlayer() throws Exception {
 		Player player = ticTacToe.createPlayer();
 		assertNotNull(player);
-
+		assertEquals(1, player.getId());
 	}
 
 }

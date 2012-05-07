@@ -24,10 +24,6 @@ public class TicTacToe {
 		this.grid = grid;
 	}
 
-	public Grid getGrid() {
-		return grid;
-	}
-
 	public void init() {
 		players = new ArrayList<Player>();
 		players.add(createPlayer());

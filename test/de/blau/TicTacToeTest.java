@@ -47,11 +47,6 @@ public class TicTacToeTest {
 	}
 
 	@Test
-	public void testGridSize() throws Exception {
-		assertEquals(16, ticTacToe.getGrid().getSize());
-	}
-
-	@Test
 	public void getPlayerOne() throws Exception {
 		ticTacToe.init();
 		assertEquals(1, ticTacToe.getPlayerOne().getId());
@@ -71,10 +66,5 @@ public class TicTacToeTest {
 		assertEquals(false, playerOne.won());
 	}
 
-	@Test
-	public void testSetField() throws Exception {
-		ticTacToe.setField(1, 1, "x");
-		assertEquals("x", ticTacToe.getField(1, 1));
-	}
 
 }

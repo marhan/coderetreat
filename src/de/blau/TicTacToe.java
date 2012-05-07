@@ -6,6 +6,10 @@ public class TicTacToe {
 
 	private int id = 0;
 
+	public TicTacToe() {
+		this.grid = new Grid(4);
+	}
+
 	public Player createPlayer() {
 		id++;
 		return new Player(id);

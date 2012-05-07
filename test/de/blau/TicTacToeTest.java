@@ -37,8 +37,7 @@ public class TicTacToeTest {
 	}
 
 	@Test
-	public void addGrid() throws Exception {
-		ticTacToe.setGrid(new Grid(4));
+	public void testGridCreation() throws Exception {
 		assertNotNull(ticTacToe.getGrid());
 	}
 

@@ -41,5 +41,12 @@ public class TicTacToeTest {
 		assertNotNull(ticTacToe.getGrid());
 	}
 
+	@Test
+	public void init() throws Exception {
+		ticTacToe.init();
+		assertEquals(2, ticTacToe.getPlayers().size());
+
+	}
+
 
 }

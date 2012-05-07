@@ -1,5 +1,8 @@
 package de.blau;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TicTacToe {
 
 	private Grid grid;
@@ -25,4 +28,14 @@ public class TicTacToe {
 		return grid;
 	}
 
+	public void init() {
+
+	}
+
+	public List<Player> getPlayers() {
+		List<Player> list = new ArrayList<Player>();
+		list.add(createPlayer());
+		list.add(createPlayer());
+		return list;
+	}
 }

@@ -68,4 +68,5 @@ public class TicTacToeTest {
 		Player playerOne = ticTacToe.getPlayerOne();
 		assertEquals("x", playerOne.move());
 	}
+
 }

@@ -3,13 +3,9 @@ package de.blau;
 public class Grid {
 
 
-	private final Integer[] array = new Integer[16];
+	private final String[] array = new String[16];
 
-	public Grid() {
-		for (int i = 0; i < array.length; i++) {
-			array[i] = new Integer(0);
-		}
-	}
+	public Grid() {}
 
 	public int getSize() {
 		return array.length;

@@ -15,7 +15,7 @@ public class TicTacToeTest {
 
 	@Test
 	public void testGrid() throws Exception {
-		Grid grid = new Grid(16);
+		Grid grid = new Grid();
 		assertEquals(16, grid.getSize());
 	}
 

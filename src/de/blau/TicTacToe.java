@@ -12,7 +12,7 @@ public class TicTacToe {
 	private List<Player> players;
 
 	public TicTacToe() {
-		this.grid = new Grid(4);
+		this.grid = new Grid();
 	}
 
 	public Player createPlayer() {

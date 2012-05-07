@@ -6,10 +6,10 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class TicTacToeTest {
+	TicTacToe ticTacToe = new TicTacToe();
 
 	@Test
 	public void test() {
-		TicTacToe ticTacToe = new TicTacToe();
 		assertNotNull(ticTacToe);
 	}
 
@@ -17,6 +17,13 @@ public class TicTacToeTest {
 	public void testGrid() throws Exception {
 		Grid grid = new Grid(4);
 		assertEquals(4, grid.getSize());
+	}
+
+	@Test
+	public void createPlayer() throws Exception {
+		Player player = ticTacToe.createPlayer();
+		assertNotNull(player);
+
 	}
 
 }

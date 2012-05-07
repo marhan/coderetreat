@@ -76,4 +76,10 @@ public class TicTacToeTest {
 		assertEquals(false, playerOne.won());
 	}
 
+	@Test
+	public void testSetField() throws Exception {
+		ticTacToe.setField(1, 1, "x");
+		assertEquals("x", ticTacToe.getField(1, 1));
+	}
+
 }

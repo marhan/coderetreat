@@ -41,4 +41,12 @@ public class TicTacToe {
 	public Player getPlayerOne() {
 		return players.get(0);
 	}
+
+	public void setField(int i, int j, String string) {
+
+	}
+
+	public String getField(int i, int j) {
+		return "x";
+	}
 }

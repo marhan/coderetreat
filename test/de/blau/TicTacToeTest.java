@@ -8,7 +8,7 @@ public class TicTacToeTest {
 
 	@Test
 	public void test() {
-		TicTacToe ticTacToe = null;
+		TicTacToe ticTacToe = new TicTacToe();
 		assertNotNull(ticTacToe);
 	}
 

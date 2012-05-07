@@ -4,8 +4,11 @@ public class TicTacToe {
 
 	private Grid grid;
 
+	private int id = 0;
+
 	public Player createPlayer() {
-		return new Player(1);
+		id++;
+		return new Player(id);
 	}
 
 	public void setGrid(Grid grid) {

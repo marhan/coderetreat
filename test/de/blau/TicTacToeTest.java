@@ -27,6 +27,16 @@ public class TicTacToeTest {
 	}
 
 	@Test
+	public void createPlayers() throws Exception {
+		Player playerOne = ticTacToe.createPlayer();
+		assertNotNull(playerOne);
+		assertEquals(1, playerOne.getId());
+		Player playerTwo = ticTacToe.createPlayer();
+		assertNotNull(playerTwo);
+		assertEquals(2, playerTwo.getId());
+	}
+
+	@Test
 	public void addGrid() throws Exception {
 		ticTacToe.setGrid(new Grid(4));
 		assertNotNull(ticTacToe.getGrid());

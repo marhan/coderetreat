@@ -15,7 +15,7 @@ public class TicTacToe {
 		this.grid = new Grid();
 	}
 
-	public Player createPlayer() {
+	private Player createPlayer() {
 		id++;
 		return new Player(id);
 	}
@@ -44,5 +44,9 @@ public class TicTacToe {
 
 	public String getField(int i, int j) {
 		return "x";
+	}
+
+	public Player getPlayerTwo() {
+		return players.get(1);
 	}
 }

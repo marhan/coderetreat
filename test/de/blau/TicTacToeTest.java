@@ -20,29 +20,11 @@ public class TicTacToeTest {
 	}
 
 	@Test
-	public void createPlayer() throws Exception {
-		Player player = ticTacToe.createPlayer();
-		assertNotNull(player);
-		assertEquals(1, player.getId());
-	}
-
-	@Test
-	public void createPlayerTwo() throws Exception {
-		ticTacToe.createPlayer();
-		Player playerTwo = ticTacToe.createPlayer();
-		assertEquals(2, playerTwo.getId());
-	}
-
-	@Test
-	public void createPlayerOne() throws Exception {
-		Player playerOne = ticTacToe.createPlayer();
-		assertEquals(1, playerOne.getId());
-	}
-
-	@Test
 	public void init() throws Exception {
 		ticTacToe.init();
 		assertEquals(2, ticTacToe.getPlayers().size());
+		assertEquals(1, ticTacToe.getPlayerOne().getId());
+		assertEquals(2, ticTacToe.getPlayerTwo().getId());
 
 	}
 
